@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto table</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <title>Crypto Table</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search By Name or Symbol">
+        <button onclick="sortByMarketCap()">Sort by Mkt Cap</button>
+        <button onclick="sortByPercentageChange()">Sort by percentage </button>
+        <table>
+            <tbody id="cryptoTableBody">
+            </tbody>
+        </table>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
